@@ -1,0 +1,26 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#/contact">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">iTunes Management</h3>
+</div>
+
+<div class="jumbotron">
+  <h3>{{ track }}</h3>
+  <p class="lead">
+    {{ album }} <br />
+    {{ playlist }} <br />
+    {{ artist }} <br />
+  </p>
+  <p class="mp3_buttons">
+    <img src="images/backward.png" alt="Previous" ng-click="prev()">
+    <img src="images/play.png" alt="Play" ng-click="play()">
+    <img src="images/pause.png" alt="Pause" ng-click="pause()">
+    <img src="images/forward1.png" alt="Next" ng-click="next()">
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#" ng-click="quit()">Quit!</a></p>
+</div>
+<div class="footer">
+  <p><span class="glyphicon glyphicon-heart"></span> from Anuj Patel</p>
+</div>
